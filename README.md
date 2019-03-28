@@ -1,2 +1,0 @@
-# spitlord.github.io
-Anihilate
