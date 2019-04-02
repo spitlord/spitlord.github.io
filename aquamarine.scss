@@ -160,9 +160,11 @@ body > * {
 }
 
 .section-parallax {
-  background-attachment: fixed;
-  background-size:cover;
-  background-position: center;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: top left;
+	background-image: url(https://pingendo.com/site-assets/cover.jpg);
+	background-repeat: repeat;
 }
 
 .bg-aquamarine {
