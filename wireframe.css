@@ -59,8 +59,23 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 
+.fullSize:before {
+  height: 50px;
+  display: block;
+  content: '';
+}
+
 .fullSize {
     height: 100%;
+}
+
+.oddScreen {
+    background: linear-gradient(180deg, rgba(240,240,179,0.15) 0%, rgba(224,213,88,0.15) 48%, rgba(255,0,196,0.10) 100%); 
+
+}
+
+.evenScreen {
+        background: linear-gradient(180deg, rgba(255,0,196,0.10) 0%, rgba(224,213,88,0.15) 48%, rgba(240,240,179,0.15) 100%); 
 }
 
 .navbar-nav > li > a {padding-top:3px !important; padding-bottom:3px !important;}
@@ -353,6 +368,7 @@ border-left: 0px;
     border-right: 0px;
   background-color: transparent;
 }
+
 
 .list-group-mine .list-group-item:hover {
   background-color: rgba(248, 131, 121, 0.5);
