@@ -69,16 +69,12 @@ nav {
     height: 100%;
     width: 100%
 }
-.bioBox {
-    background:url('assets/blur.png') no-repeat center;
-    margin-top: 1rem;
-      filter: blur(10px);
-  -webkit-filter: blur(10px);
 
-}
 
-.notBlur {
-    position
+.bio {
+    background-color: rgba(240,240,255,0.6);
+    margin-top: 4rem;
+    padding: 1rem;
 }
 .frame {
     -ms-zoom: .85;
