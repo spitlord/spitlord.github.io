@@ -48,19 +48,29 @@
     <div class="py-5 fullSize oddScreen" id="home">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xs-2"></div>
-                <div class="col-xs-3">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-4">
                     <div class="d-flex flex-column justify-content-center p-3">
                         <h1>Hi, I'm Mark&nbsp; ;)&nbsp; &nbsp;</h1>
-                        <h3 class="mb-3 lead textBlack">I am a software developer</h3>
+                        <h3 class="textBlack">I am a software developer</h3>
                         <div class="row">
-                            <div class="col-md-6"> <i class="fa fa-3x mr-3 text-muted d-inline fa-laptop iconBlack"></i><i class="fa fa-3x mr-3 text-muted d-inline fa-commenting-o iconBlack"></i><i class="fa fa-3x mr-3 text-muted d-inline fa-cog iconBlack"></i><i class="fa fa-3x mr-3 text-muted d-inline fa-thumbs-up iconBlack"></i> </div>
+                            <div class="col-md-6"><i class="fa fa-3x mr-3 text-muted d-inline fa-laptop iconBlack "></i><i class="fa fa-3x mr-3 text-muted d-inline fa-commenting-o iconBlack"></i><i class="fa fa-3x mr-3 text-muted d-inline fa-cog iconBlack"></i><i class="fa fa-3x mr-3 text-muted d-inline fa-thumbs-up iconBlack"></i></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3"><img class="img-fluid d-block" src="https://static.pingendo.com/img-placeholder-tablet.svg"></div>
-                <div class="col-xs-2"></div>
+                <div class="col-xs-4"><img class="img-fluid d-block" src="https://static.pingendo.com/img-placeholder-tablet.svg"></div>
+                <div class="col-xs-1"></div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-8 text-justify bioBox rounded">
+                    <br><br><br><br><br>
+                </div>
+                <h3 class="notBlur">
+I'm a nasty green color that you all hate. I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.   I'm a nasty green color that you all hate.                      
+                    </h3>
+
+            </div>
+            
         </div>
     </div>
 
@@ -74,6 +84,7 @@
                         <li class="list-group-item rounded-0">JavaScript</li>
                         <li class="list-group-item">JQuery</li>
                         <li class="list-group-item">Ajax</li>
+                        <li class="list-group-item">JavaFX</li>
                         <li class="list-group-item">HTML</li>
                         <li class="list-group-item">CSS</li>
                         <li class="list-group-item list-group-item-bottom rounded-0">Bootstrap</li>
@@ -114,48 +125,56 @@
 
 <div class="fullSize oddScreen">
     <div id="projects" class="slideshow-container fixed fullSize">
-        <!-- Full-width images with number and caption text -->
         <div class="mySlides text-center">
-            <h1>Dynamic Memory Allocator Maker</h1>
-            <div class="caption">If you decide to study classical English poetry, then you read Shakespeare. In case of learning C, you implement a memory allocator. </div>
-            <img src="assets/malloc.gif" width="600" height="250">
-        </div>
+            <h1>Gerrymandering App</h1>
+            <div class="caption rounded">Gerrymandering is the practice of manipulating district boundaries in order to gain voting advantage. There were many suspecious district arrangements throughout U.S. history. However, gerrymandering was hard to prove: there wasn't a solid mathematical method. Well, now there are different metrics, which allow it to be quantified. This app I made creates fair districting, taking into account various metrics, such as geometric compactness and partisan symmetry.</div>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/MNFWosbk8ec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
 
-        <div class="mySlides text-center justify-content-md-center">
-            <h1> A*-Star Pathfinding Algorithm</h1>
-            <iframe class="frame text-center justify-content-md-center" width="900" height="500" src="https://a-star-implementation.firebaseapp.com" frameborder="0"></iframe>
         </div>
-
         <div class="mySlides text-center">
-            <h1>MetroMap Maker</h1>
+            <h1>MetroMapMaker</h1>
+            <div class="caption rounded">
+                With this tool, you can create and edit custom metro maps. It has many basic features and it can also calculate the best travel root.</div>
             <img src="assets/metro.png" width="800" height="450">
         </div>
         <div class="mySlides text-center">
-            <h1>Gerrymandering App</h1>
-            <div class="caption">Gerrymandering is the practice of manipulating district boundaries in order to gain voting advantage. There were many suspecious district arrangements throughout U.S. history. However, gerrymandering was hard to prove: there wasn't a solid mathematical method. Well, now there are different metrics, which allow it to be quantified. This app I made creates fair districting, taking into account various metrics, such as geometric compactness and partisan symmetry.</div>
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/MNFWosbk8ec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
+            <h1>Dynamic Memory Allocator Maker</h1>
+            <div class="caption rounded">
+                I implemented a memory allocator in C. It uses buddy system, where every block has a twin. When user needs some memory, the allocator will search for the block that fits the best.
+            </div>
+            <img src="assets/malloc.gif" width="600" height="250">
+        </div>
+        <div class="mySlides text-center">
+        <h1> A* (A-Star) Pathfinding Algorithm</h1>
+           <div class="caption rounded">
+               Many computer games use pathfinding to move a character from point X to point Y on the map. A* is widely used because of efficiency and accuracy.
+           </div>
+            <iframe class="frame text-center justify-content-md-center" width="900" height="500" src="https://a-star-implementation.firebaseapp.com" frameborder="0"></iframe>
         </div>
         <div class="mySlides text-center">
             <h1>Get Off My Lawn Bunny Game</h1>
-            <div class="caption">This is a game me and my friend made. It was really fun working on art, music and code. The goal of the game is really simple -- to protect your territory from bunny/zombie invasion. We made an AI that adapts to player's strategy and it can be quite challenging to beat.</div>
+            <div class="caption rounded">
+                This is a game me and my friend made. It was really fun working on art, music and code. The goal of the game is really simple — to protect your territory from bunny/zombie invasion. We made an AI that adapts to player's strategy and it can be quite challenging to beat.
+            </div>
             <iframe id="goml" class="goml text-center justify-content-md-center" width="1000" height="800"  name="htmlComp-iframe" frameborder="0" scrolling="auto" src="https://get-off-my-lawn-update.firebaseapp.com/"></iframe>
         </div>
-
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 </div>
 
 
+    
+    
     <div id="formContainer" class="fullSize evenScreen">
         <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-      <form class="rounded p-3 formsbox " id="emailForm" method="POST" action="https://formspree.io/koshkinmark@gmail.com">
+      <form class="rounded p-4 formsbox" id="emailForm" method="POST" action="https://formspree.io/koshkinmark@gmail.com">
           <div class="form-row">
             <div class="col-md-12">
-                    <h1 class="text-center">If you would like to get in touch with me:</h1>
+                    <h1 class="text-center ">If you would like to get in touch with me:</h1>
                 <br>
                 <br>
             </div>
@@ -186,14 +205,15 @@
         <div class="form-row">
             <div class="col-md-4"></div>
             <div class="form-group col-md-4 justify-content-md-center">
-                <button type="submit" class="btn btn-primary text-center">Send -></button>
+                <button id="send" type="submit" class="btn btn-outline-secondary text-center">Send</button>
+                
             </div>
             <div class="col-md-4"></div>
         </div>
           <div class="form-row suka">
             <div class="col-md-12 justify-content-md-center suka">
                 <br>
-                <h1 class="text-center">Thank you for visiting and enjoy your day!</h1>
+                <h1 class="text-center">Thank you for visiting and have a nice day!</h1>
               </div>
           </div>
           <div class="form-row">
@@ -206,12 +226,7 @@
             </div>
 </div>        
         
-        
-        
-        
-        
-        
-        
+
             
         
     </div>
