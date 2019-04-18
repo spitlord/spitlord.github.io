@@ -12,6 +12,8 @@
     <meta name="author" content="Pingendo">
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -173,7 +175,7 @@
                 </div>
             </div>
             <div class="row justify-content-md-center">     
-                <iframe class="frame text-center justify-content-md-center" width="900" height="500" src="https://a-star-implementation.firebaseapp.com" frameborder="0"></iframe>
+                <iframe class="frame text-center justify-content-md-center" width="900" height="500" src=""  real-src="https://a-star-implementation.firebaseapp.com" frameborder="0"></iframe>
             </div>
         </div>
         <div class="mySlides text-center">
@@ -186,7 +188,7 @@
                 </div>
             </div>
              <div class="row justify-content-md-center">
-                <iframe id="goml" class="goml text-center justify-content-md-center" width="1000" height="800"  name="htmlComp-iframe" frameborder="0" scrolling="auto" src="https://get-off-my-lawn-update.firebaseapp.com/"></iframe>
+                <iframe id="goml" class="goml text-center justify-content-md-center" width="1000" height="800"  name="htmlComp-iframe" frameborder="0" scrolling="auto" src="" real-src="https://get-off-my-lawn-update.firebaseapp.com/ "></iframe>
             </div>
             
         </div>
@@ -194,9 +196,6 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 </div>
-
-
-    
     
     <div id="formContainer" class="fullSize evenScreen">
         <br><br>
@@ -248,17 +247,14 @@
           </div>
           <div class="form-row">
             <div class="col-md-12 justify-content-md-center text-center">
-                            <img class="" src="assets/bag.gif" width="500" height="200">
+                <img class="" src="assets/bag.gif" width="500" height="200">
               </div>
           </div>
          
     </form>
             </div>
-</div>        
-        
-
-            
-        
+</div>      
+          <div class="col-md-2"></div>    
     </div>
 </body>
 <script>
@@ -272,10 +268,19 @@
     });
 });
     
-    
-    </script>
+document.addEventListener("DOMContentLoaded", function() {
+    var intersectionObserver = new IntersectionObserver(
+        function(entries) {
+            if (entries[0].intersectionRatio <= 0) return;
+            intersectionObserver.unobserve(document.querySelector('#projects'));
+            $('iframe').each(function() {
+                $(this).attr("src", $(this).attr("real-src"));
+            });
 
-
+        });
+    intersectionObserver.observe(document.querySelector('#projects')); 
+});
+</script>
 <script src="js/sliderScript.js"></script>
 
 
